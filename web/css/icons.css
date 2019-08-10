@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* CSS Document */
+
+#iconos {
+	display: inline-block;
+	vertical-align: top;
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-image:url(../img/iconos.png); 
+}
+.ico1 {
+	width: 16px;
+	height: 17px;
+	background-position: 0px 0px;
+}
+.ico2 {
+	width: 16px;
+	height: 17px;
+	background-position: 0px -17px;
+}
+.ico3 {
+	width: 16px;
+	height: 17px;
+	background-position: 0px -34px;
+}
+.ico4 {
+	width: 16px;
+	height: 17px;
+	background-position: 0px -51px;
+}
+.ico5 {
+	width: 16px;
+	height: 17px;
+	background-position: 0px -68px;
+}
+.ico6 {
+	width: 16px;
+	height: 17px;
+	background-position: 0px -85px;
+}
+.ico7 {
+	width: 16px;
+	height: 17px;
+	background-position: 0px -102px;
+}
+.ico8 {
+	width: 16px;
+	height: 17px;
+	background-position: 0px -119px;
+}
+.ico9 {
+	width: 16px;
+	height: 17px;
+	background-position: 0px -136px;
+}
+.ico10 {
+	width: 16px;
+	height: 17px;
+	background-position: 0px -153px;
+}
+.ico11 {
+	width: 16px;
+	height: 17px;
+	background-position: 0px -170px;
+}
+.ico12 {
+	width: 16px;
+	height: 17px;
+	background-position: 0px -187px;
+}
+.ico13 {
+	width: 16px;
+	height: 17px;
+	background-position: 0px -204px;
+}
+.ico14 {
+	width: 16px;
+	height: 17px;
+	background-position: 0px -221px;
+}
+.ico15 {
+	width: 16px;
+	height: 17px;
+	background-position: 0px -238px;
+}
+.ico16 {
+	width: 16px;
+	height: 17px;
+	background-position: 0px -255px;
+}
+.ico17 {
+	width: 16px;
+	height: 17px;
+	background-position: 0px -272px;
+}
+.ico18 {
+	width: 16px;
+	height: 14px;
+	background-position: 0px -289px;
+}
+.ico19 {
+	width: 16px;
+	height: 17px;
+	background-position: 0px -302px;
+}
+.ico20 {
+	width: 16px;
+	height: 17px;
+	background-position: 0px -319px;
+}
+.ico21 {
+	width: 114px;
+	height: 101px;
+	background-position: 0px -336px;
+}
+
+

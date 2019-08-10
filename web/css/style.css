@@ -1,0 +1,73 @@
+    .lobby2 {
+      display: block!important;
+      background: url(../img/room_stuff2.png) no-repeat;
+    }
+    #janelas{
+        position: absolute;
+        top: 100px;
+        left: 140px;
+        bottom: 0;
+        right: 0;
+        width: 85%;
+        
+    }
+
+    .miniwindow{
+        position:fixed; 
+        width: 254px;
+        height: 296px;
+        background-position: -1501px -413px;
+        z-index: 9999;
+    }
+    .fechar{
+        position: absolute;
+        left: 325px;
+        top: 282px;
+        width: 29px;
+        height: 31px;
+        background-position: -334px -215px;
+    }
+    .fechar:hover{
+        opacity: 0.5;
+    }
+    .mensagens{
+        margin-top: 8px;
+        margin-left: 13px;
+        width: 352px;
+        height: 197px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        
+    }
+    .listar{
+        width: 317px;
+        margin-top: 0px;
+        margin-left: 5px;
+        color: #acf2f6;
+        
+    }
+    .msgbox{
+        position: absolute;
+        left: 12px;
+        top: 247px;
+        width: 339px;
+        color: #acf2f6;
+        background-color: transparent;
+        border: 0px;
+        font-size: 12px;
+        padding: 6px;
+    }
+    .usernametop{
+        margin-top: 5px;
+        margin-left: 17px;
+        font-size: 24px;
+    }
+    .chatDialogProfile {
+        position: absolute;
+        left: 228px;
+        bottom: 12px;
+        width: 43px;
+        height: 30px;
+        background-position: -260px -216px;
+    }
+

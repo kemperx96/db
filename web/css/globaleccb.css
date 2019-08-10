@@ -1,0 +1,1382 @@
+root {
+    display: block
+}
+
+body {
+
+    cursor: url(../img/arrow.png),default
+}
+
+* html #main {
+
+    height: 100%;
+}
+
+#main {
+    margin: 0px auto;
+    position: absolute;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+html, body {
+    height: 100%
+}
+
+body {
+    color: #eaeaea;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    background: transparent;
+}
+
+body {
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+body, input , textarea, option, .normal {
+    font: normal normal 12px 'Arial', Helvetica, sans-serif, lucida, 'lucida grande';
+}
+
+body, .normal {
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    margin: 0;
+    background-image: url(../img/gf.jpg);
+    color: #eee;
+}
+
+body.loading * {
+    cursor: progress
+}
+
+input , textarea, option {
+    outline: 0;
+    margin: 0;
+    font-size: 100%;
+}
+
+img {
+    vertical-align: middle
+}
+
+a {
+    text-decoration: none;
+    color: #FFF5EE;
+}
+
+a:hover,a:active {
+    text-decoration: underline
+}
+
+a.stronglink {
+    text-decoration: none
+}
+
+fieldset {
+    padding: 5px;
+    border: 1px solid #666;
+}
+
+h1,h2,h3,h4, q {
+    cursor: default;
+    color: #FFF;
+    font-family: 'Open Sans Condensed';
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
+    text-decoration: none;
+    color: #fff
+}
+
+h1 {
+    font-size: 15pt;
+}
+
+h2,h4 {
+    font-size: 10pt;
+}
+
+h3 {
+    font-size: 12pt;
+}
+
+header, nav, article, footer, address {
+    display: block
+}
+
+strong, legend {
+    color: #FFF5EE;
+    font-weight: bold
+}
+
+hr {
+    height: 1px;
+    color: #fff;
+    border: 0;
+    background: transparent url('../img/dotted.gif') repeat-x;
+    margin: 15px 0;
+}
+
+#game {
+    left: 0;
+    top: 0;
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    width: 800px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#game .game_layer {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+@-webkit-keyframes progress {
+    0% {
+        opacity: .9
+    }
+
+    50% {
+        opacity: .6
+    }
+
+    100% {
+        opacity: .9
+    }
+}
+#LoginWindowBG{
+    position: absolute;
+    width: 354px;
+    height: 199px;
+    top: 170px;
+    left:410px;
+    background-position: -1488px -207px;
+    z-index: 100;
+
+}
+#fblogin{
+    position: absolute;
+    top: 70px;
+    left:35px;
+
+}
+#AlertBoxTitle {
+    position: absolute;
+    left: 25px;
+    top: 11px;
+    font-size: 16px;
+    color: white;
+}
+#AlertBoxContent {
+    position: absolute;
+    left: 0;
+    top:150px;
+    padding-left: 30px;
+    padding-right: 45px;
+    font-size: 12px;
+    color: white;
+
+}
+#cortina {
+    position: absolute;
+    z-index: 99;
+    background: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 100%;
+}
+#cajabox{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 400px;
+    height: 200px;
+    margin-left:-200px;
+    margin-top:-100px;
+    background-color: black;
+    z-index: 100;
+
+}
+#banmesaje{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 300px;
+    height: 100px;
+    margin-left:-150px;
+    margin-top:-50px;   
+    color: red;
+    z-index: 101;
+}
+.oculto{
+    visibility: hidden;
+}
+.nooculto{
+    visibility: show;
+}
+#progress {
+    width: 100%;
+    height: 33px;
+    background: rgba(0,0,0,.5);
+    z-index: 98;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+#progress div {
+    -webkit-animation: progress 0.4s infinite;
+    background: #baff00;
+    height: 32px;
+    margin: 1px 0 0 0;
+    position: relative;
+    float: left;
+}
+
+#progress span {
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    width: 150px;
+    display: block
+}
+
+@-webkit-keyframes star {
+    0% {
+        -webkit-transform: scale(0.7) rotate(0deg)
+    }
+
+    50% {
+        -webkit-transform: scale(0.45) rotate(-5deg)
+    }
+
+    100% {
+        -webkit-transform: scale(0.7) rotate(0deg)
+    }
+}
+
+.like {
+    position: absolute;
+    top: 300px;
+    right: 80px;
+    z-index: 50;
+    background: rgba(0,0,0,.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.star {
+    -webkit-animation: star 0.5s infinite;
+    position: absolute;
+    top: 270px;
+    right: 224px;
+    z-index: 50;
+    width: 48px;
+    height: 48px;
+    background: transparent url(../img/star_icon.png) no-repeat 0
+}
+
+#updater {
+    position: absolute;
+    padding: 2px 2px 2px 2px;
+    border-radius: 3px;
+    background: #003042;
+    border: 1px solid #000;
+    color: #ddd;
+    top: 508px;
+    left: 20px
+}
+#updater2 {
+    position: absolute;
+    padding: 2px 2px 2px 2px;
+    border-radius: 3px;
+    background: #003042;
+    border: 1px solid #000;
+    color: #ddd;
+    top: 228px;
+    left: 20px
+}
+#updater3 {
+    position: absolute;
+    padding: 2px 2px 2px 2px;
+    border-radius: 3px;
+    background: #003042;
+    border: 1px solid #000;
+    color: #ddd;
+    top: 268px;
+    left: 20px
+}
+#updater4 {
+    position: absolute;
+    padding: 2px 2px 2px 2px;
+    border-radius: 3px;
+    background: #003042;
+    border: 1px solid #000;
+    color: #ddd;
+    top: 328px;
+    left: 20px
+}
+.main_layer {
+    background: transparent url(../img/main_layer.png) no-repeat 0 0
+}
+#prev {
+    position: absolute;
+    z-index: 98;
+    
+    width: 100%;
+    height: 100%;
+    opacity: .05;
+}
+.wait {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  width: 242px;
+  height: 112px;
+  background: transparent url(../img/wait.png) no-repeat 0 0;
+  animation: play .5s steps(4) infinite;
+  z-index: 99
+}
+
+@keyframes play {
+    100% { background-position: -968px; }
+}
+#s1{
+	position: absolute;
+	top: 45px;
+	left: 20px;
+}
+#s2{
+	position: absolute;
+	top: 45px;
+	left: 270px;
+}
+#s3{
+	position: absolute;
+	top: 130px;
+	left: 20px;
+}
+#s4{
+    position: absolute;
+    top: 130px;
+    left: 270px;
+}
+#game_servers_box {
+	position: absolute;
+    left: 11px;
+    top:20px;
+    width: 581px;
+    height: 586px;
+    background-position: -562px -604px;
+}
+
+#game_servers_box .bt {
+    position: absolute;
+    width: 81px;
+    height: 35px;
+    bottom: 6px;
+}
+#buttomx{
+    position: absolute;
+
+}
+#viewall{
+    position: absolute;
+     top: 541px;
+    left: 360px;
+}
+.button_viewall {
+position: absolute;
+	
+    right: 43px;
+    background-position: 0 -534px
+}
+
+.button_viewall:hover {
+    background-position: 0 -574px
+}
+
+.button_viewall:active {
+    background-position: 0 -614px
+}
+
+.button_viewallx {
+position: absolute;
+   top: 487px;
+    left: 330px;
+    background-position: 0 -654px
+}
+
+#friends{
+    position: absolute;
+      top: 541px;
+    left: 450px;
+}
+.button_friends {
+ position: absolute;     
+    right: 130px;
+    background-position: -85px -534px
+}
+
+.button_friends:hover {
+    background-position: -85px -574px
+}
+
+.button_friends:active {
+    background-position: -85px -614px
+}
+
+.button_friendsx {
+    position: absolute;
+          top: 487px;
+    left: 420px;
+    background-position: -85px -654px
+}
+
+.server, .serveroff {
+    width: 223px;
+    height: 65px;
+}
+
+.server_title, .server_desc {
+    margin: 0 0 0 7px;
+    padding: 5px 8px 1px 7px;
+}
+
+.server_title {
+    color: #fff;
+    width: 170px;
+    height: 18px;
+    line-height: 18px;
+}
+.guild {
+    position: absolute;
+    top: 5px;
+    left: 182px;
+    color: #ffde9c;
+    width: 170px;
+    height: 18px;
+    line-height: 18px;
+}
+.name {
+    position: absolute;
+    top: 22px;
+    left: 182px;
+    color: #fff;
+    width: 130px;
+    height: 18px;
+    line-height: 18px;
+}
+.name2 {
+    position: absolute;
+    top: 22px;
+    left: 12px;
+    color: #fff;
+    width: 130px;
+    height: 18px;
+    line-height: 18px;
+}
+.server_desc {
+    color: #b5efff;
+    width: 170px;
+    height: 34px
+}
+
+.server {
+    background-position: 0 -694px
+}
+
+.server:hover {
+    background-position: 0 -764px
+}
+
+.server:active,.server.on {
+    background-position: 0 -834px
+}
+.serveroff {
+    background-position: 0 -903px
+}
+#game_main_buttons1 {
+    position: absolute;
+    width: 107px;
+    height: 45px;
+    top: 590px
+}
+#game_main_buttons2 {
+    position: absolute;
+    width: 107px;
+    height: 45px;
+    top: 590px
+}
+#game_main_buttons3 {
+    position: absolute;
+    width: 107px;
+    height: 45px;
+    top: 590px
+}
+.button_exit {
+    background-position: -229px -582px;
+    left: 40px;
+}
+.button_exitoff {
+    background-position: -229px -535px;
+    left: 40px;
+}
+
+.button_exit:hover {
+    background-position: -229px -629px;
+}
+
+.button_exit:active {
+    background-position: -229px -675px;
+}
+
+.button_buddy {
+    background-position: -338px -582px;
+    left: 163px;
+}
+
+.button_buddy:hover {
+    background-position: -338px -629px;
+}
+
+.button_buddy:active {
+    background-position: -338px -675px;
+}
+.button_buddyoff {
+    background-position: -338px -535px;
+    left: 163px;
+}
+
+.button_servers {
+    background-position: -447px -582px;
+    left: 383px;
+}
+
+.button_serversoff {
+    background-position: -447px -535px;
+    left: 383px;
+}
+
+.button_servers:hover {
+    background-position: -447px -629px;
+}
+
+.button_servers:active {
+    background-position: -447px -675px;
+}
+
+.sb {
+    /*shadow black*/
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.sby {
+    /*shadow black*/
+    color:#e0dd5f;
+}
+.sbs {
+    /*shadow black*/
+    color:#3ddc3d;
+}
+.sbsc{
+        color: #ffde9c;
+    text-shadow: #de4c18 -1px 0 2px,#de4c18 0 1px 2px,#de4c18 1px 0 2px,#de4c18 0 -1px 2px;
+    filter: progid:DXImageTransform.Microsoft.Glow(Strength=1,Color=#de4c18);
+
+}
+.sys{
+    color: #efa11d;
+}
+.cguild{
+    color: #efa11d;
+}
+.cname{
+    color: white;
+}
+.sbguild {
+    /*shadow black*/
+    text-shadow: -1px 0 blue, 0 1px blue, 1px 0 blue, 0 -1px blue;
+}
+.ns {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.a, .abs {
+    position: absolute
+}
+
+.l, .cw {
+    color: #fff
+}
+
+.ln {
+    color: #bbb;
+}
+
+.ts1 ::-moz-selection, .ts1 ::-webkit-selection, .ts1 ::selection {
+    text-shadow: none
+}
+
+.ts1 {
+    text-shadow: 1px 1px 0px #000;
+}
+
+.fsi {
+    font-style: italic
+}
+
+.fwb {
+    font-weight: bold
+}
+
+.cp {
+    cursor: pointer
+}
+
+.ffo {
+    font-family: "Open Sans Condensed";
+}
+
+.br5 {
+    border-radius: 5px;
+}
+
+.br8 {
+    border-radius: 8px;
+}
+
+.br15 {
+    border-radius: 15px;
+}
+
+.b6 {
+    border: 1px solid #666
+}
+
+.bt6 {
+    border-top: 1px solid #666
+}
+
+.p5 {
+    padding: 5px
+}
+
+.mt2 {
+    margin-top: 2px
+}
+
+.mb2 {
+    margin-bottom: 2px
+}
+
+.mr5 {
+    margin-right: 5px
+}
+
+.mr10 {
+    margin-right: 10px
+}
+
+.op9 {
+    opacity: .9
+}
+
+.op8 {
+    opacity: .8
+}
+
+.op7 {
+    opacity: .7
+}
+
+.op6 {
+    opacity: .6
+}
+
+.op5 {
+    opacity: .5
+}
+
+.op4 {
+    opacity: .4
+}
+
+.op3 {
+    opacity: .3
+}
+
+.light strong, .light a {
+    color: #FF7600
+}
+
+table.tabN {
+    border-collapse: collapse
+}
+
+table.tabN td {
+    vertical-align: top;
+}
+
+table.tabFull {
+    width: 100%
+}
+
+table.tabCells {
+    border-collapse: separate;
+    border-spacing: 0px;
+}
+
+table.tabCells td, table.tabCells th {
+    padding: 5px;
+    border-right: 1px solid #000;
+    border-left: 1px solid #666;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #000
+}
+
+table.tabCells th {
+    background: #555;
+    text-align: center
+}
+
+table td.select {
+    cursor: pointer;
+}
+
+table td.select:hover, table td.selected {
+    background-color: #FF7200;
+    color: #fff
+}
+
+table td.unselect {
+    cursor: default;
+}
+
+table tr.loading td.select {
+    background: none;
+    cursor: default
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1; }
+
+.clear {
+    clear: both;
+}
+
+.cent, .tac {
+    text-align: center
+}
+
+.fleft, .fl {
+    float: left
+}
+
+.fright, .fr {
+    float: right
+}
+
+.right {
+    text-align: right
+}
+
+.left {
+    text-align: left
+}
+
+td.left {
+    text-align: left !important
+}
+
+.cent {
+    text-align: center;
+}
+#game_servers_boxl {
+    position: absolute;
+top:0;
+        left:250px;
+    height: 603px;
+    width: 844px;
+    background-position: -562px 0 
+}
+#game_main_buttonsl {
+    position: absolute;
+    width: 107px;
+    height: 45px;
+    top: 610px;
+}
+
+/*xxxx*/
+.button_exitl {
+    background-position: -229px -582px;
+    left: 20px;
+}
+.button_exitoffl {
+    background-position: -229px -535px;
+    left: 20px;
+}
+.button_exitl:hover {
+    background-position: -229px -629px;
+}
+.button_exitl:active {
+    background-position: -229px -675px;
+}
+
+/*xxxx*/
+.button_buddyl {
+    background-position: -338px -582px;
+    left: 160px;
+}
+.button_buddyoffl {
+    background-position: -338px -535px;
+    left: 160px;
+}
+.button_buddyl:hover {
+    background-position: -338px -629px;
+}
+
+.button_buddyl:active {
+    background-position: -338px -675px;
+}
+
+/*xxxx*/
+.ranking {
+    background-position: -229px -47px;
+    left: 300px;
+}
+.rankingoff {
+    background-position: -229px -0px;
+    left: 300px;
+}
+.ranking:hover {
+    background-position: -229px -141px;
+}
+.ranking:active {
+    background-position: -229px -94px;
+}
+
+/*xxxx*/
+.avatar {
+    background-position: -338px -47px;
+    left: 440px;
+}
+.avataroff {
+    background-position: -338px -0px;
+    left: 440px;
+}
+.avatar:hover {
+    background-position: -338px -143px;
+}
+.avatar:active {
+    background-position: -338px -94px;
+}
+
+/*xxxx*/
+.create {
+    background-position: -229px -235px;
+    left: 580px;
+}
+.createoff {
+    background-position: -229px -188px;
+    left: 580px;
+}
+.create:hover {
+    background-position: -229px -329px;
+}
+
+.create:active {
+    background-position: -229px -282px;
+}
+
+/*xxxx*/
+.join {
+    background-position: -447px -47px;
+    left: 720px;
+}
+.joinoff {
+    background-position: -447px -0px;
+    left: 720px;
+}
+.join:hover {
+    background-position: -447px -143px;
+}
+.join:active {
+    background-position: -447px -94px;
+}
+#scrollup{
+    position: absolute;
+    width: 23px;
+    height: 22px;
+    background-position: -1422px -208px;
+}
+#scrollup:hover{
+    background-position: -1422px -232px;
+}
+#scrollup:active {
+    background-position: -1422px -208px;
+}
+#scrolldown{
+    position: absolute;
+    top: 30px;
+    width: 23px;
+    height: 22px;
+    background-position: -1447px -208px;
+}
+#scrolldown:hover{
+    background-position: -1447px -232px;
+}
+#scrolldown:active {
+    background-position: -1447px -208px;
+}.history{
+    position: absolute;
+    width: 583px;
+    height: 214px;
+    top: 354px;
+    left: 25px;
+        overflow: auto;
+    overflow-x: hidden;
+    z-index: 999
+}
+/* width */
+.history::-webkit-scrollbar {
+    background: ;
+    width: 23px;
+
+}
+
+/* Track */
+.history::-webkit-scrollbar-track {
+    background: ; 
+}
+ 
+/* Handle */
+.history::-webkit-scrollbar-thumb {
+
+background: #00b7ff; 
+ border-radius:10px;
+border: 1px solid #e5edef;
+ }
+.history::-webkit-scrollbar-button:decrement{
+    
+    background: transparent url(../img/main_layer.png) no-repeat 0 0;
+    width: 23px;
+    height: 32px;
+    background-position: -1422px -208px;
+}
+.history::-webkit-scrollbar-button:decrement:hover{
+    background-position: -1422px -243px;
+}
+.history::-webkit-scrollbar-button:decrement:active{
+    background-position: -1422px -208px;
+}
+.history::-webkit-scrollbar-button:increment{
+    background-image: url(../img/main_layer.png), -webkit-linear-gradient(top,  #f9f9f9 50%,#e2e2e2 100%) ;
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 22px;
+    background-position: -1447px -208px;
+}
+.history::-webkit-scrollbar-button:hover{
+
+    background-position: -1447px -243px;
+}
+.history::-webkit-scrollbar-button:active{
+
+    background-position: -1447px -208px;
+}
+#message{
+    position: absolute;
+    background: transparent;
+    border-color:transparent ;
+    color: white;
+    font-size: 13px;
+    top: 571px;
+    left: 20px;
+    width: 555px;
+    height: 13px;
+    text-align: left;
+}
+.ico1 {
+    background-position: -1147px -604px;
+    width:16px;
+    height:12px;
+    float: left;
+    margin-top: 1px;
+}
+.ico2 {
+    background-position: -1147px -617px;
+    width:16px;
+    height:12px;
+    float: left;
+    margin-top: 1px;
+}
+.ico3 {
+    background-position: -1147px -631px;
+    width:16px;
+    height:12px;
+    float: left;
+    margin-top: 1px;
+}
+.ico4 {
+    background-position: -1147px -644px;
+    width:16px;
+    height:12px;
+    float: left;
+    margin-top: 1px;
+}
+.ico5 {
+    background-position: -1147px -658px;
+    width:16px;
+    height:12px;
+    float: left;
+    margin-top: 1px;
+}
+.rank{
+    position: absolute;
+    top: 9px;
+    left: 160px;
+    width: 17px;
+    height: 26px;
+}
+.rank0{background-position: 0 -1974px;}
+.rank1{background-position: -17px -1974px;}
+.rank2{background-position: -34px -1974px;}
+.rank3{background-position: -51px -1974px;}
+.rank4{background-position: -68px -1974px;}
+.rank5{background-position: -85px -1974px;}
+.rank6{background-position: -102px -1974px;}
+.rank7{background-position: -119px -1974px;}
+.rank8{background-position: -136px -1974px;}
+.rank9{background-position: -153px -1974px;}
+.rank10{background-position: -170px -1974px;}
+.rank11{background-position: -187px -1974px;}
+.rank12{background-position: -204px -1974px;}
+.rank13{background-position: -221px -1974px;}
+.rank14{background-position: -238px -1974px;}
+.rank15{background-position: -255px -1974px;}
+.rank16{background-position: -272px -1974px;}
+.rank17{background-position: -289px -1974px;}
+.rank18{background-position: -306px -1974px;}
+.rank19{background-position: -323px -1974px;}
+.rank20{background-position: -340px -1974px;}
+.rank21{background-position: -357px -1974px;}
+.rank22{background-position: -374px -1974px;}
+.rank23{background-position: -391px -1974px;}
+.rank24{background-position: -408px -1974px;}
+.rank25{background-position: -425px -1974px;}
+
+.rankx {
+    width: 17px;
+    height: 26px;
+}
+#cashfree{
+    left: 705px;
+    top: 5px;
+    width:55px ;
+    height:48px ;
+    position: absolute;
+    background-position: -1167px -604px;
+    z-index: 100;
+}
+#cashfree:hover{
+    background-position: -1222px -604px;
+}
+#cashfree:active{
+
+    background-position: -1277px -604px;
+}
+
+#freecashdisol{
+        left: 705px;
+    top: 5px;
+    width:55px ;
+    height:48px ;
+    position: absolute;
+    background-position: -1332px -604px;
+    z-index: 100;
+}
+#timerx2{
+
+    font-size:12px;
+    color :yellow;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#listado{
+  position: absolute;
+  left: 610px;
+  top: 353px;
+ z-index: 666;
+}
+#amigos {
+position: absolute;
+height: 234px;
+width: 223px;
+overflow: auto;
+overflow-x: hidden;
+
+}#amigosl2 {
+  position: absolute;
+  height:29px; 
+  top: 0px;
+  left:  0px;
+}
+#amigosl {
+  height:30px; 
+  margin-left: -25px;
+}
+#tt2 {
+  position: absolute;
+  margin: 3px 34px;
+  font-size: 17px;
+}
+#tt3 {
+  position: absolute;
+    width: 91px;
+    height: 25px;
+  margin: 3px 57px;
+  width: 181px;
+  color: orange;
+  font-size: 12px;
+}
+#tt4 {
+  position: absolute;
+    width: 91px;
+    height: 25px;
+  margin: 15px 57px;
+  width: 181px;
+  color: white;
+  font-size: 12px;
+}
+
+#amigos::-webkit-scrollbar {
+    background: ;
+    width: 23px;
+
+}
+
+/* Track */
+#amigos::-webkit-scrollbar-track {
+    background: ; 
+}
+ 
+/* Handle */
+#amigos::-webkit-scrollbar-thumb {
+
+background: #00b7ff; 
+ border-radius:10px;
+border: 1px solid #e5edef;
+ }
+#amigos::-webkit-scrollbar-button:decrement{
+    
+    background: transparent url(../img/main_layer.png) no-repeat 0 0;
+    width: 23px;
+    height: 32px;
+    background-position: -1422px -208px;
+}
+#amigos::-webkit-scrollbar-button:decrement:hover{
+    background-position: -1422px -243px;
+}
+#amigos::-webkit-scrollbar-button:decrement:active{
+    background-position: -1422px -208px;
+}
+#amigos::-webkit-scrollbar-button:increment{
+    background-image: url(../img/main_layer.png), -webkit-linear-gradient(top,  #f9f9f9 50%,#e2e2e2 100%) ;
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 22px;
+    background-position: -1447px -208px;
+}
+#amigos::-webkit-scrollbar-button:hover{
+
+    background-position: -1447px -243px;
+}
+#amigos::-webkit-scrollbar-button:active{
+
+    background-position: -1447px -208px;
+}
+#chatbuddy{
+    position: absolute;
+    top: 10px;
+    left: 610px;
+        width: 232px;
+    height: 297px;
+  background-position: -1762px -413px;
+}
+#listadox{
+  position: absolute;
+  left: 10px;
+  top: 49px;
+}
+#support-chat{
+    position: absolute;
+    left: 615px;
+    top: 354px;
+}
+#amigosx {
+position: absolute;
+height: 233px;
+width: 212px;
+overflow: auto;
+overflow-x: hidden;
+
+}#logs {
+position: absolute;
+height: 233px;
+width: 212px;
+overflow: auto;
+overflow-x: hidden;
+
+}
+#amigosls {
+  height:30px; 
+  margin-left: -25px;
+}
+.icomale {
+    position: absolute;
+    background-position: -1145px -672px;
+    width:29px;
+    height:27px;
+}
+.useritem{
+    position: absolute;
+    width: 250px;
+}
+.icofemale {
+    position: absolute;
+    background-position: -1145px -699px;
+    width:29px;
+    height:27px;
+}
+#ttgender {
+  position: absolute;
+  margin: 2px 28px;
+  font-size: 17px;
+}
+#tt2x {
+  position: absolute;
+  margin: 3px 34px;
+  font-size: 17px;
+}
+#tt3x {
+  position: absolute;
+    width: 91px;
+    height: 25px;
+  margin: 3px 57px;
+  width: 181px;
+  color: orange;
+  font-size: 12px;
+}
+#tt4x {
+  position: absolute;
+    height: 25px;
+  margin: 15px 57px;
+  width: 181px;
+  color: white;
+  font-size: 12px;
+}
+#tt2x1 {
+  position: absolute;
+  margin: 3px 59px;
+  font-size: 17px;
+}
+#tt3x2 {
+  position: absolute;
+    width: 91px;
+    height: 25px;
+  margin: 3px 78px;
+  width: 181px;
+  color: orange;
+  font-size: 12px;
+}
+#tt4x3 {
+  position: absolute;
+    height: 25px;
+  margin: 15px 78px;
+  width: 181px;
+  color: white;
+  font-size: 12px;
+}
+#amigosx::-webkit-scrollbar {
+    background: ;
+    width: 23px;
+
+}
+
+/* Track */
+#amigosx::-webkit-scrollbar-track {
+    background: ; 
+}
+ 
+/* Handle */
+#amigosx::-webkit-scrollbar-thumb {
+
+background: #00b7ff; 
+ border-radius:10px;
+border: 1px solid #e5edef;
+ }
+#amigosx::-webkit-scrollbar-button:decrement{
+    
+    background: transparent url(../img/main_layer.png) no-repeat 0 0;
+    width: 23px;
+    height: 32px;
+    background-position: -1422px -208px;
+}
+#amigosx::-webkit-scrollbar-button:decrement:hover{
+    background-position: -1422px -243px;
+}
+#amigosx::-webkit-scrollbar-button:decrement:active{
+    background-position: -1422px -208px;
+}
+#amigosx::-webkit-scrollbar-button:increment{
+    background-image: url(../img/main_layer.png), -webkit-linear-gradient(top,  #f9f9f9 50%,#e2e2e2 100%) ;
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 22px;
+    background-position: -1447px -208px;
+}
+#amigosx::-webkit-scrollbar-button:hover{
+
+    background-position: -1447px -243px;
+}
+#amigosx::-webkit-scrollbar-button:active{
+
+    background-position: -1447px -208px;
+}
